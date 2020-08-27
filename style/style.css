@@ -1,0 +1,281 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+}
+
+body {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background: white;
+}
+
+.welcome {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+}
+
+.my-video {
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 400px;
+}
+
+.container {
+    margin: 30px auto;
+}
+
+button {
+    position: relative;
+    padding: 10px 30px;
+    margin: 20px;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #006699;
+    border: 2px solid #266085;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #006699;
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    color: #266085;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.info {
+    font-size: 1rem;
+    color: #266085;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.icon {
+    width: 300px;
+}
+
+.day {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.temperature,
+.city,
+.description,
+.pressure,
+.wind,
+.cloudiness,
+.humidity {
+    color: white;
+}
+
+.temperature {
+    font-size: 8rem;
+    font-weight: 200;
+    color: #e7c60d;
+    margin-top: -40px;
+}
+
+.city {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+.description {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.pressure {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.params {
+    display: none;
+    margin: 40px 0 20px 0;
+}
+
+.wind,
+.cloudiness,
+.humidity {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 2rem;
+    position: relative;
+    bottom: 25px;
+}
+
+hr {
+    display: none;
+    height: 0.01em;
+    width: 50%;
+    background-color: white;
+    border: 0;
+    opacity: .4
+}
+
+.parameter {
+    width: 70px;
+    display: inline-block;
+}
+
+.days {
+    margin: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    display: none;
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 300px;
+    height: 300px;
+}
+
+.one,
+.two,
+.three,
+.four img {
+    width: 150px;
+}
+
+.one-temperature,
+.two-temperature,
+.three-temperature,
+.four-temperature {
+    color: #e7c60d;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.one-date,
+.two-date,
+.three-date,
+.four-date {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    html {
+        height: auto;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    .day {
+        font-size: 1.2rem;
+    }
+
+    .temperature {
+        font-size: 6rem;
+    }
+
+    .wind,
+    .cloudiness,
+    .humidity {
+        display: inline-block;
+        padding: 0 20px;
+        font-weight: 300;
+        font-size: 1.2rem;
+        bottom: 12px;
+    }
+
+    .icon {
+        width: 200px;
+    }
+
+    .parameter {
+        width: 40px;
+    }
+
+    .params {
+        width: 100%;
+    }
+
+    .wind,
+    .cloudiness,
+    .humidity {
+        padding: 10px;
+    }
+
+    hr {
+        width: 80vw;
+    }
+
+    .welcome {
+        width: 100%;
+    }
+
+    .days {
+        margin: 0 auto;
+        width: 100vw;
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+        text-align: center;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .one,
+    .two,
+    .three,
+    .four img {
+        width: 100px;
+    }
+
+}
